@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Plans</title>
+</head>
+<style>
+    body{
+        background: rgb(0, 0, 0);
+        display: flex;
+        justify-content: center;
+        height: 100vh;
+        margin: 0;
+    }
+    .uno{
+        background:  rgb(40, 40, 40);
+        width: 240px;
+        height: 290px;
+        border-radius: 15px;
+        position: relative;
+        bottom: -10%;
+    }
+    #dos{
+        background:  rgb(20, 20, 20);
+        width: 220px;
+        height: 270px;
+        border-radius: 15px;
+        position: relative;
+        top: -40.7%;
+        right: 95%;
+    }
+    #tres{
+        background:  rgb(20, 20, 20);
+        width: 220px;
+        height: 270px;
+        border-radius: 15px;
+        position: relative;
+        top: -89.7%;
+        left: 103%;
+    }
+    #subPrin{
+        color: white;
+        font-family: fantasy;
+        font-size: large;
+        text-align: center;
+
+    }
+    #subSec{
+        color: white;
+        font-family: fantasy;
+        font-size: large;
+        text-align: center;
+
+    }
+    #subTer{
+        color: white;
+        font-family: fantasy;
+        font-size: large;
+        text-align: center;
+    }
+    #precio{
+        color: white;
+        font-family: fantasy;
+        font-size: 300%;
+        text-align: center; 
+        margin-top: 10px;
+        margin-bottom: 0px;
+    }
+    #tipoMoneda{
+        color: rgb(212, 212, 212);
+        font-family: system-ui;
+        font-size: 70%;
+       text-align: center;
+       margin-top: 0px;
+    }
+    #tipoMonedaFirst{
+        color: rgb(212, 212, 212);
+        font-family: system-ui;
+        font-size: 70%;
+       text-align: center;
+       margin-top: 0px;
+       margin-bottom: 35px;
+    }
+    li{
+        color: white;
+        font-size: 65%;
+        text-align: left;
+        font-family: system-ui;
+    }
+.section-Logo {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 10px;
+  
+}
+
+.netflix-logo {
+  height: 125px;
+  width: 75px;
+  position: relative;
+  transform: scaleX(0.5), scaleY(0.5);
+}
+
+.netflix-logo::after {
+  content: "";
+  width: 120%;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  position: absolute;
+  left: -10%;
+  bottom: -6%;
+  z-index: 2;
+}
+
+.line {
+  width: 25px;
+  height: 0%;
+  background: #de1c0f;
+  position: absolute;
+}
+
+.left {
+  left: 0;
+  bottom: 0;
+  animation: animation 500ms linear forwards;
+  animation-delay: 500ms;
+}
+
+.center {
+  top: 0;
+  left: 0;
+  transform: skewX(22deg);
+  transform-origin: top left;
+  box-shadow: 0 0 90px black;
+  z-index: 1;
+  animation: animation 500ms linear forwards;
+  animation-delay: 1000ms;
+}
+
+.right {
+  right: 0;
+  bottom: 0;
+  animation: animation 500ms linear forwards;
+  animation-delay: 1500ms;
+}
+
+@keyframes animation {
+  100% {
+    height: 100%;
+  }
+}
+#Titulo{
+    color: white;
+        font-family: fantasy;
+        font-size: xx-large;
+        text-align: center;
+        margin-top: 40px;
+        margin-bottom: 0px;
+        height: 20px;
+        animation: sliden 2s linear ;
+}
+
+@keyframes sliden{
+    0% { transform: translateX(-100%) translateY(0); }
+    25% { transform: translateX(-75%) translateY(50%); }
+    50% { transform: translateX(-50%) translateY(0); }
+    75% { transform: translateX(-25%) translateY(-50%); }
+    100% { transform: translateX(0) translateY(0); }
+}
+</style>
+<body>
+    <section>
+    <div class="section-Logo">
+        <div class="netflix-logo">
+            <div class="left line"></div>
+            <div class="center line"></div>
+            <div class="right line"></div>
+        </div>
+    </div>
+        <div id="Titulo">Choose your plan </div>
+        <div class="uno">
+            <div id="subPrin">Standard</div>
+                <p id="precio">11,49</p>
+                <p id="tipoMonedaFirst">USD/monthly</p>
+                <li>Juegos móviles, series y películas; sin publicidad y sin límite</li>
+                <li>Puedes ver contenido en 1 dispositivo compatible a la vez</li>
+                <li>Puedes ver en HD</li>
+                <li>Puedes descargar contenido en 1 dispositivo compatible a la vez</li>
+            </div>
+        <div id="dos">
+            <div id="subSec">Basic</div>
+            <p id="precio">6</p>
+            <p id="tipoMoneda">USD/monthly</p>
+            <li>Juegos móviles, series y películas; sin publicidad y sin límite</li>
+            <li>Puedes ver contenido en 2 dispositivos compatibles a la vez</li>
+            <li>Puedes ver en Full HD</li>
+            <li>Puedes descargar contenido en 2 dispositivos compatibles a la vez</li>
+            <li>Opción para agregar hasta 1 miembro extra que no viva contigo</li>
+        </div>
+        <div id="tres">
+            <div id="subTer">Premium</div>
+            <p id="precio">20</p>
+            <p id="tipoMoneda">USD/monthly</p>
+            <li>Juegos móviles, series y películas; sin publicidad y sin límite</li>
+            <li>Puedes ver contenido en 4 dispositivos compatibles a la vez</li>
+            <li>Puedes ver en Ultra HD</li>
+            <li>Puedes descargar contenido en 6 dispositivos compatibles a la vez</li>
+            <li>Opción para agregar hasta 2 miembros extras que no vivan contigo</li>
+            <li>Audio especial de Netlix</li>
+        </div>
+    </section>
+</body>
+</html>
